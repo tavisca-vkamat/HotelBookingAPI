@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE2</Id>
+      <Name>Citrus Hotel</Name>
+      <Email>reservations@citrushotels.in</Email>
+      <City>Pune</City>
+      <Area>Pimpri Chinchwad</Area>
+      <Rating>4.5</Rating>
+      
+        <RateMin>3000</RateMin>
+        <RateMax>30000</RateMax>
+     
+      <Amenities>
+          Gym, Room Service, Restaurant, swimRateMing pool, Internet Access
+      </Amenities>
+   </Hotel>

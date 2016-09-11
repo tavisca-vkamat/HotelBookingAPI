@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM10</Id>
+      <Name>The Roa Hotel</Name>
+      <Email>info@TheRoaHotel.com</Email>
+      <City>Mumbai</City>
+      <Area>Sakinaka</Area>
+      <Rating>3</Rating>
+      
+        <RateMin>3490</RateMin>
+        <RateMax>22500</RateMax>
+      
+      <Amenities>
+       Room Service , Internet Acces 
+      </Amenities>
+   </Hotel>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM3</Id>
+      <Name>Meluha - The Fern</Name>
+      <Email>info@MeluhaThe Fern.com</Email>
+      <City>Mumbai</City>
+      <Area>Powai</Area>
+      <Rating>5</Rating>
+      
+        <RateMin>8200</RateMin>
+        <RateMax>15000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, SwimRateMing Pool, Internet Access
+      </Amenities>
+   </Hotel>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>PUNE1</Id>
+      <Name>The O Hotel</Name>
+      <Email>info@ohotelsindia.com</Email>
+      <City>Pune</City>
+      <Area>Koregaon park</Area>
+      <Rating>5</Rating>
+      <RateMin>4000</RateMin>
+      <RateMax>50000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, Restaurant
+      </Amenities>
+   </Hotel>
+
+

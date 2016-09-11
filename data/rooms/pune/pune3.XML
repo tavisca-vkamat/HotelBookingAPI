@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE3_1</Id>
+		<Type>Business Room</Type>
+		<Rate>2998</Rate>
+		<Amenities>Accommodation only, 20% discount of Food, Soft Beverages, SPA</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE3_2</Id>
+		<Type>Business Room with Breakfast</Type>
+		<Rate>3249</Rate>
+		<Amenities>Accommodation only, 20% discount of Food, Soft Beverages, SPA</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE3_3</Id>
+		<Type>Executive Suite</Type>
+		<Rate>6664</Rate>
+		<Amenities>Accommodation only, 20% discount of Food, Soft Beverages, SPA</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE3_4</Id>
+		<Type>Executive Suite with Breakfast and Dinner</Type>
+		<Rate>7498</Rate>
+		<Amenities>FREE Breakfast and Dinner, 20% discount of Food & Soft Beverages and SPA</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

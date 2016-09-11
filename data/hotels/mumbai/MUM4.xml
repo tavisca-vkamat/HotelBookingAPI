@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM4</Id>
+      <Name>TrIdent Bandra Kurla</Name>
+      <Email>info@TrIdent.com</Email>
+      <City>Mumbai</City>
+      <Area>Bandra</Area>
+      <Rating>5</Rating>
+      
+        <RateMin>8750</RateMin>
+        <RateMax>52000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, SwimRateMing Pool, Internet Access
+      </Amenities>
+   </Hotel>
+
+

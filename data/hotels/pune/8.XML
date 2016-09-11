@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE8</Id>
+      <Name>Hotel Bhooshan</Name>
+      <Email>Bhooshan@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Shivaji Nagar</Area>
+      <Rating>3.9</Rating>
+      
+        <RateMin>1776</RateMin>
+        <RateMax>1776</RateMax>
+     
+      <Amenities>
+           Room Service, Internet Access
+      </Amenities>
+   </Hotel>
