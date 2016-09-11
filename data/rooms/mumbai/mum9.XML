@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>MUM9_1</Id>
+		<Type>Superior Room with Breakfast</Type>
+		<Rate>4666</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM9_2</Id>
+		<Type>Deluxe Room with Breakfast</Type>
+		<Rate>9000</Rate>
+		<Amenities>Accommodation, FREE Breakfast, Airport Transfers chargeable</Amenities>
+	</Room>
+
+</Rooms>   

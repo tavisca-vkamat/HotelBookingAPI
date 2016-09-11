@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE4</Id>
+      <Name>Hotel Sayaji</Name>
+      <Email>sales@sayajikolhapur.com</Email>
+      <City>Pune</City>
+      <Area>Wakad</Area>
+      <Rating>4.8</Rating>
+     
+        <RateMin>4450</RateMin>
+        <RateMax>16142</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, Restaurant, swimRateMing pool
+      </Amenities>
+   </Hotel>

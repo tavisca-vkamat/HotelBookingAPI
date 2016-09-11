@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>MUM8_1</Id>
+		<Type>Luxury Tranquility Room Comp Basic Wifi</Type>
+		<Rate>8000</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM8_2</Id>
+		<Type>Luxury Room City View King Bed Comp Basic Wifi</Type>
+		<Rate>9000</Rate>
+		<Amenities>Accommodation, FREE Breakfast, Airport Transfers chargeable</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM8_3</Id>
+		<Type>Luxury Room City View Twin Bed Comp Basic Wifi </Type>
+		<Rate>11000</Rate>
+		<Amenities>FREE Breakfast, FREE Wi-Fi, Accommodation</Amenities>
+	</Room>
+</Rooms>   

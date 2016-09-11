@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA4</Id>
+    <Name>Baga Hotel</Name>
+    <Email>baga@yahoo.com</Email>
+    <City>Goa</City>
+    <Area>Sauntawado</Area>
+    <Rating>1</Rating>
+    
+        <RateMin>1200</RateMin>
+        <RateMax>5000</RateMax>
+    
+    <Amenities>Room Service, Restaurant,Wifi</Amenities>
+    </Hotel>

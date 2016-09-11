@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA10</Id>
+    <Name>Ramada Caravela</Name>
+    <Email>ramada@gmail.com</Email>
+    <City>Goa</City>
+    <Area>varca village</Area>
+    <Rating>5</Rating>
+    
+        <RateMin>6000</RateMin>
+        <RateMax>70000</RateMax>
+    
+    <Amenities>SwimRateMing Pool,Gym,Room Service,Restaurant,Wifi</Amenities>
+    </Hotel>

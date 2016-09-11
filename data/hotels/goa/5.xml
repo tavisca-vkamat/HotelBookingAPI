@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA5</Id>
+    <Name>Treehouse Blue</Name>
+    <Email>treehouse.blue@gmail.com</Email>
+    <City>Goa</City>
+    <Area>Baga Beach</Area>
+    <Rating>2</Rating>
+    
+        <RateMin>1500</RateMin>
+        <RateMax>30000</RateMax>
+    
+    <Amenities>Room Service</Amenities>
+    </Hotel>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE4_1</Id>
+		<Type>Sayaji Grande with Breakfast</Type>
+		<Rate>4450</Rate>
+		<Amenities> FREE Breakfast, FREE Wi-Fi, Buffet Breakfast, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE4_2</Id>
+		<Type>Sayaji Suites with Breakfast</Type>
+		<Rate>16142</Rate>
+		<Amenities> FREE Breakfast, Accommodation</Amenities>
+	</Room>
+	
+</Rooms>   
+   
+
+

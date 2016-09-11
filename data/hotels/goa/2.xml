@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <Hotel>
+    <Id>GOA2</Id>
+    <Name>Longuinhos Beach Resort</Name>
+    <Email>lbresort@lbs.com</Email>
+    <City>Goa</City>
+    <Area>Colva Area</Area>
+    <Rating>3</Rating>
+    
+        <RateMin>2829</RateMin>
+        <RateMax>4331</RateMax>
+    
+    <Amenities>Restaurant</Amenities>
+    </Hotel>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA7</Id>
+    <Name>Villagio Resort</Name>
+    <Email>villagio@reddifmail.com</Email>
+    <City>Goa</City>
+    <Area>Betalbatim Salcette</Area>
+    <Rating>4</Rating>
+    
+        <RateMin>4449</RateMin>
+        <RateMax>30000</RateMax>
+    
+    <Amenities>Room Service, Restaurant,Wifi</Amenities>
+    </Hotel>

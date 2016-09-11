@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE1_1</Id>
+		<Type>Deluxe Room</Type>
+		<Rate>4400</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE1_2</Id>
+		<Type>Deluxe Room with Breakfast</Type>
+		<Rate>4840</Rate>
+		<Amenities>Accommodation only,Free Cancellation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE1_3</Id>
+		<Type>O Club Room</Type>
+		<Rate>6000</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE1_4</Id>
+		<Type>O Club Room with Breakfast</Type>
+		<Rate>6840</Rate>
+		<Amenities>Accommodation only,Free Cancellation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>GOA1</Id>
+      <Name>The O Hotel</Name>
+      <Email>info@ohotelsindia.com</Email>
+      <City>Goa</City>
+      <Area>Palm Beach Road</Area>
+      <Rating>5</Rating>
+      
+        <RateMin>4000</RateMin>
+        <RateMax>50000</RateMax>
+      
+      <Amenities>Gym, Room Service, Restaurant,Wifi</Amenities>
+   </Hotel>

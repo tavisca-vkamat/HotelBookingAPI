@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE6</Id>
+      <Name>Hotel Supreme Heritage</Name>
+      <Email>supreme@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Kalyani Nagar</Area>
+      <Rating>4.5</Rating>
+      
+        <RateMin>2525</RateMin>
+        <RateMax>5999</RateMax>
+      
+      <Amenities>
+          Room Service, Internet Access
+      </Amenities>
+   </Hotel>

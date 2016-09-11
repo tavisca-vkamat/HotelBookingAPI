@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE9</Id>
+      <Name>The Centurion Hotel</Name>
+      <Email>Centurion@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Shivaji Nagar</Area>
+      <rating>4.1</rating>
+     
+        <RateMin>2789</RateMin>
+        <RateMax>8000</RateMax>
+     
+      <Amenities>
+           Room Service, Internet Access, Restaurant
+      </Amenities>
+   </Hotel>

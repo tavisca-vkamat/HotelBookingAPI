@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE9_1</Id>
+		<Type>Executive Room with Breakfast</Type>
+		<Rate>2789</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE9_2</Id>
+		<Type>Deluxe Room with Breakfast</Type>
+		<Rate>4099</Rate>
+		<Amenities>Accommodation only,Free Cancellation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE9_3</Id>
+		<Type>Suite Room with Breakfast</Type>
+		<Rate>8000</Rate>
+		<Amenities>Accommodation only, Cancellation charges apply</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

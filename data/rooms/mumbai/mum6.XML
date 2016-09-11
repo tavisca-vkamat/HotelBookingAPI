@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>MUM6_1</Id>
+		<Type>Deluxe Room with free wifi</Type>
+		<Rate>3600</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM6_3</Id>
+		<Type>Executive Room with free wifi</Type>
+		<Rate>4000</Rate>
+		<Amenities>Accommodation, FREE Breakfast, Airport Transfers chargeable</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM6_2</Id>
+		<Type>Club Room with Breakfast</Type>
+		<Rate>4500</Rate>
+		<Amenities>FREE Breakfast, FREE Wi-Fi, Accommodation</Amenities>
+	</Room>
+	
+	
+</Rooms>   
+   
+
+
