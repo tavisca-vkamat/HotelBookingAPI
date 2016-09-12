@@ -2,6 +2,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HotelBooking;
 using System.Collections.Generic;
+using HotelBooking.hotelService;
+using HotelBooking.bookingService;
 
 namespace HotelTests
 {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelBooking.bookingService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -17,9 +18,9 @@ namespace HotelBooking
 
             bookingstatus.BookingDetails = bookingdetails;
 
-
             bookingdetails.BookingDate = DateTime.Now;
             bookingdetails.TotalPrice = CalculatePrice(bookingdetails.City, bookingdetails.RoomId, bookingdetails.numberOfRooms);
+
 
             return bookingstatus;
         }

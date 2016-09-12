@@ -67,15 +67,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bookingService\BookingDeatils.cs" />
     <Compile Include="bookingService\BookingService.svc.cs">
       <DependentUpon>BookingService.svc</DependentUpon>
     </Compile>
+    <Compile Include="bookingService\BookingStatus.cs" />
     <Compile Include="customer\Customer.cs" />
+    <Compile Include="hotelService\Hotel.cs" />
+    <Compile Include="hotelService\HotelFilter.cs" />
     <Compile Include="hotelService\HotelFilterOperations.cs" />
     <Compile Include="hotelService\HotelService.svc.cs">
       <DependentUpon>HotelService.svc</DependentUpon>
     </Compile>
     <Compile Include="bookingService\IBookingService.cs" />
+    <Compile Include="hotelService\HotelStatus.cs" />
     <Compile Include="hotelService\IHotel.cs" />
     <Compile Include="roomService\IRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
