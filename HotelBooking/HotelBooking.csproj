@@ -62,27 +62,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bookingService\BookingService.svc" />
-    <Content Include="HotelService.svc" />
-    <Content Include="RoomService.svc" />
+    <Content Include="hotelService\HotelService.svc" />
+    <Content Include="roomService\RoomService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bookingService\BookingService.svc.cs">
       <DependentUpon>BookingService.svc</DependentUpon>
     </Compile>
-    <Compile Include="HotelFilterOperations.cs" />
-    <Compile Include="HotelService.svc.cs">
+    <Compile Include="hotelService\HotelFilterOperations.cs" />
+    <Compile Include="hotelService\HotelService.svc.cs">
       <DependentUpon>HotelService.svc</DependentUpon>
     </Compile>
     <Compile Include="bookingService\IBookingService.cs" />
-    <Compile Include="IHotel.cs" />
-    <Compile Include="IRoom.cs" />
+    <Compile Include="hotelService\IHotel.cs" />
+    <Compile Include="roomService\IRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoomFilterOperations.cs" />
-    <Compile Include="RoomService.svc.cs">
+    <Compile Include="roomService\RoomFilterOperations.cs" />
+    <Compile Include="roomService\RoomService.svc.cs">
       <DependentUpon>RoomService.svc</DependentUpon>
     </Compile>
-    <Compile Include="RoomsList.cs" />
     <Compile Include="SerializeOperations.cs" />
   </ItemGroup>
   <ItemGroup>
