@@ -1,15 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Web;
 
 namespace HotelBooking.hotelService
 {
+    [DataContract]
     public class HotelFilter
     {
+        [DataMember]
         string cityName;
+        [DataMember]
         string rating;
+        [DataMember]
         string minRate;
+        [DataMember]
         string[] amenities;
 
         public HotelFilter(string cityName, string rating, string minRate, string[] amenities)
