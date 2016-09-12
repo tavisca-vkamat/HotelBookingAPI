@@ -9,9 +9,9 @@ namespace HotelBooking.roomService
     [DataContract]
     public class RoomStatus
     {
-
+        [DataMember]
         public List<Room> rooms { get; set; }
-
+        [DataMember]
         public string messsage { get; set; }
 
     }

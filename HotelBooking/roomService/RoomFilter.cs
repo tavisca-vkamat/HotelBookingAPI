@@ -9,9 +9,13 @@ namespace HotelBooking.roomService
     [DataContract]
     public class RoomFilter
     {
+        [DataMember]
         string cityName;
+        [DataMember]
         string hotelId;
+        [DataMember]
         string rate;
+        [DataMember]
         string[] amenities;
 
         public RoomFilter(string cityname, string hotelId, string rate, string[] amenities)
@@ -27,8 +31,6 @@ namespace HotelBooking.roomService
             cityName = cityname;
             HotelId = hotelId;
             this.rate = rate;
-
-
         }
         public RoomFilter(string cityname, string hotelId)
         {

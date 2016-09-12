@@ -2,27 +2,41 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace HotelBooking
 {
+
     internal class HotelFilterOperations
     {
         internal static List<Hotel> FilterByRate(List<Hotel> hotels, string minRate)
         {
-            for (int hotel = 0; hotel < hotels.Count(); hotel++)
+            for (int hotel = 0; hotel < hotels.Count();)
             {
+                bool flagOfBreak = false;
                 if (double.Parse(hotels[hotel].RateMin) > double.Parse(minRate))
+                {
                     hotels.Remove(hotels[hotel]);
+                    flagOfBreak = true;
+                }
+                if (!flagOfBreak)
+                    hotel++;
             }
             return hotels;
         }
 
         internal static List<Hotel> FilterByRating(List<Hotel> hotels, string rating)
         {
-            for (int hotel = 0; hotel < hotels.Count(); hotel++)
+            for (int hotel = 0; hotel < hotels.Count(); )
             {
+                bool flagOfBreak = false;
                 if (double.Parse(hotels[hotel].Rating) < double.Parse(rating))
+                {
                     hotels.Remove(hotels[hotel]);
+                    flagOfBreak = true;
+                }
+                if (!flagOfBreak)
+                    hotel++;
             }
             return hotels;
         }
@@ -45,7 +59,7 @@ namespace HotelBooking
                         break;
                     }
                 }
-                if(!flagOfBreak)
+                if (!flagOfBreak)
                     hotel++;
             }
             return hotels;

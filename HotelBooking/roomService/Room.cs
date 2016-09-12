@@ -11,9 +11,13 @@ namespace HotelBooking.roomService
     [XmlRoot("Room")]
     public class Room
     {
+        [DataMember]
         string id;
+        [DataMember]
         string type;
+        [DataMember]
         string rate;
+        [DataMember]
         string amenities;
 
         [XmlElement("Id")]

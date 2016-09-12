@@ -11,10 +11,17 @@ namespace HotelBooking
     {
         internal static List<Room> FilterByRate(List<Room> rooms, string rate)
         {
-            for (int room = 0; room < rooms.Count(); room++)
+            for (int room = 0; room < rooms.Count();)
             {
+                bool flagOfBreak = false;
                 if (double.Parse(rooms[room].Rate) > double.Parse(rate))
+                {
                     rooms.Remove(rooms[room]);
+                    flagOfBreak = true;
+                }
+                if (!flagOfBreak)
+                    room++;
+
             }
             return rooms;
         }
