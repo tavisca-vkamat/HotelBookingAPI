@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM2</Id>
+      <Name>Hotel Beacon T2 Juhu</Name>
+      <Email>info@HotelBeaconT2.com</Email>
+      <City>Mumbai</City>
+      <Area>Mumbai Airport</Area>
+      <Rating>3</Rating>
+      
+        <RateMin>2720</RateMin>
+        <RateMax>6000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, SPA , Internet Access
+      </Amenities>
+   </Hotel>
+
+

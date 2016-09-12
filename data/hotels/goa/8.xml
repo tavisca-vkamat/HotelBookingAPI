@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA8</Id>
+    <Name>Green Valley Apartment</Name>
+    <Email>gvapartment@gmail.com</Email>
+    <City>Goa</City>
+    <Area>calangute</Area>
+    <Rating>3</Rating>
+    
+        <RateMin>3000</RateMin>
+        <RateMax>10000</RateMax>
+    
+    <Amenities>Room Service,Restaurant,Wifi</Amenities>
+    </Hotel>

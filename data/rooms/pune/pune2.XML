@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE2_1</Id>
+		<Type>Superior Room with Breakfast</Type>
+		<Rate>3000</Rate>
+		<Amenities>FREE Breakfast, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE2_2</Id>
+		<Type>Deluxe Room with Breakfast</Type>
+		<Rate>3750</Rate>
+		<Amenities>FREE Breakfast, Accommodation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

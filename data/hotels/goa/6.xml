@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA6</Id>
+    <Name>Riva Beach Resort </Name>
+    <Email>rivabeach@gmail.com</Email>
+    <City>Goa</City>
+    <Area>Baga Bardez</Area>
+    <Rating>5</Rating>
+    
+        <RateMin>6000</RateMin>
+        <RateMax>50000</RateMax>
+    
+    <Amenities>Gym,Room Service,Restaurant,Wifi</Amenities>
+    </Hotel>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE10</Id>
+      <Name>The Central Park Hotel</Name>
+      <Email>centralpark@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Pune central city</Area>
+      <Rating>4.4</Rating>
+      
+        <RateMin>3096</RateMin>
+        <RateMax>3910</RateMax>
+    
+      <Amenities>
+           Gym, Room Service, Restaurant, swimming pool, Internet Access
+      </Amenities>
+   </Hotel>

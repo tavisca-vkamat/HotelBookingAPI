@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE7</Id>
+      <Name>Royal OrchId Central</Name>
+      <Email>OrchId@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Kalyani Nagar</Area>
+      <Rating>4.3</Rating>
+      
+        <RateMin>4050</RateMin>
+        <RateMax>5400</RateMax>
+     
+      <Amenities>
+           Gym, Room Service, Restaurant, swimming pool
+      </Amenities>
+   </Hotel>

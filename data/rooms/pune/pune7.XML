@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE7_1</Id>
+		<Type>Deluxe Room with Breakfast</Type>
+		<Rate>4050</Rate>
+		<Amenities>FREE Breakfast, FREE Wi-Fi, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE7_2</Id>
+		<Type>Club Room with Breakfast</Type>
+		<Rate>5400</Rate>
+		<Amenities>FREE Breakfast, FREE Wi-Fi, Accommodation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

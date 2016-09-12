@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE3</Id>
+      <Name>Lemon Tree Hotel</Name>
+      <Email>hi.hp@lemontreehotels.com</Email>
+      <City>Pune</City>
+      <Area>Hinjawadi</Area>
+      <Rating>3.8</Rating>
+      
+        <RateMin>2998</RateMin>
+        <RateMax>20000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, Restaurant, swimming pool, Internet Access
+      </Amenities>
+   </Hotel>

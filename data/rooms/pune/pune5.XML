@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE5_1</Id>
+		<Type>Deluxe Room</Type>
+		<Rate>2398</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	
+	<Room>
+		<Id>PUNE5_2</Id>
+		<Type>Executive room</Type>
+		<Rate>3098</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+
+</Rooms>   
+   
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM5</Id>
+      <Name>The Ambassador</Name>
+      <Email>info@TheAmbassador.com</Email>
+      <City>Mumbai</City>
+      <Area>Marine Lines</Area>
+      <Rating>4</Rating>
+      
+        <RateMin>5950</RateMin>
+        <RateMax>35700</RateMax>
+      
+      <Amenities>
+          Gym, Room Service
+      </Amenities>
+   </Hotel>
+
+

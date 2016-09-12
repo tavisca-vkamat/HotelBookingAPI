@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM1</Id>
+      <Name>Ramee Guestline Hotel Juhu</Name>
+      <Email>info@RameeGuestline.com</Email>
+      <City>Mumbai</City>
+      <Area>Juhu</Area>
+      <Rating>4</Rating>
+      
+        <RateMin>2450</RateMin>
+        <RateMax>6000</RateMax>
+      
+      <Amenities>
+          Gym, Room Service, SwimRateMing Pool
+      </Amenities>
+   </Hotel>
+
+

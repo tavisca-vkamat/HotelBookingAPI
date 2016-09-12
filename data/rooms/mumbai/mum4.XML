@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>MUM4_1</Id>
+		<Type>Room category assigned on arrival</Type>
+		<Rate>8750</Rate>
+		<Amenities>FREE Breakfast, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM4_2</Id>
+		<Type>Room category assigned on arrival</Type>
+		<Rate>9200</Rate>
+		<Amenities>FREE Breakfast, FREE Wi-Fi, Accommodation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

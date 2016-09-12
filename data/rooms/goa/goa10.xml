@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Rooms>
+	<Room>
+		<Id>GOA10_1</Id>
+		<Type>Standard Room</Type>
+		<Rate>6000</Rate>
+		<Amenities>Accommodation with Room Service</Amenities>
+	</Room>
+	<Room>
+		<Id>GOA10_2</Id>
+		<Type>Deluxe Room</Type>
+		<Rate>40000</Rate>
+		<Amenities>Accommodation with Room Service,Lunch</Amenities>
+	</Room>
+	<Room>
+		<Id>GOA10_3</Id>
+		<Type>Premium Room</Type>
+		<Rate>70000</Rate>
+		<Amenities>Room Service,Restaurant,TV,Ac,Wifi,Gym,Swimming Pool</Amenities>
+	</Room>
+	
+</Rooms>

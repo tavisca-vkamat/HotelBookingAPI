@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE6_1</Id>
+		<Type>Superior Room with Breakfast</Type>
+		<Rate>2525</Rate>
+		<Amenities>FREE Breakfast, Wifi Access, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE6_2</Id>
+		<Type>Luxury Room with Breakfast</Type>
+		<Rate>2727</Rate>
+		<Amenities>FREE Breakfast, Air conditioned accommodation, Breakfast, Car parking, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE6_3</Id>
+		<Type>SUITE with Breakfast</Type>
+		<Rate>5999</Rate>
+		<Amenities>FREE Breakfast, Airport transfer one way (pick up or drop)., Accommodation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

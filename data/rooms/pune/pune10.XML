@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>PUNE10_1</Id>
+		<Type>Superior Room with Breakfast</Type>
+		<Rate>3096</Rate>
+		<Amenities>FREE Breakfast, Airport Transfers chargeable, Accommodation</Amenities>
+	</Room>
+	<Room>
+		<Id>PUNE10_2</Id>
+		<Type>Smart Space (Deluxe Room) with Breakfast</Type>
+		<Rate>3910</Rate>
+		<Amenities>Accommodation only,Free Cancellation</Amenities>
+	</Room>
+</Rooms>   
+   
+
+

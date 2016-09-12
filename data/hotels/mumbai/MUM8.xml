@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM8</Id>
+      <Name>Taj Lands End</Name>
+      <Email>info@TajHotel.com</Email>
+      <City>Mumbai</City>
+      <Area>Bandra</Area>
+      <Rating>5</Rating>
+      
+        <RateMin>8000</RateMin>
+        <RateMax>52000</RateMax>
+      
+      <Amenities>
+       Room Service , Gym , SPA , Internet Acces , SwimRateMing Pool
+      </Amenities>
+   </Hotel>
+
+

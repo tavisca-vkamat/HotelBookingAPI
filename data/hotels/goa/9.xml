@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+     <Hotel>
+    <Id>GOA9</Id>
+    <Name>Treebo Turtle</Name>
+    <Email>tthotels@yahoo.com</Email>
+    <City>Goa</City>
+    <Area>calangute</Area>
+    <Rating>2</Rating>
+    
+        <RateMin>2000</RateMin>
+        <RateMax>7000</RateMax>
+    
+    <Amenities>Room Service, Restaurant,Wifi</Amenities>
+    </Hotel>

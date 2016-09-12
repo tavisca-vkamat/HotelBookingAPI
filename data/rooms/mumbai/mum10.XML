@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Rooms>
+	<Room>
+		<Id>MUM10_1</Id>
+		<Type>Executive Room</Type>
+		<Rate>3499</Rate>
+		<Amenities>Accommodation only</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM10_2</Id>
+		<Type>Executive Room with Breakfast</Type>
+		<Rate>4000</Rate>
+		<Amenities>Accommodation, FREE Breakfast</Amenities>
+	</Room>
+	<Room>
+		<Id>MUM10_3</Id>
+		<Type>Suite with Breakfast</Type>
+		<Rate>6000</Rate>
+		<Amenities>Accommodation, FREE Breakfast</Amenities>
+	</Room>
+</Rooms>   

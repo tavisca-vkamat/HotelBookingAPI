@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM7</Id>
+      <Name>Kohinoor Continental</Name>
+      <Email>info@KohinoorContinental.com</Email>
+      <City>Mumbai</City>
+      <Area>Andheri</Area>
+      <Rating>4</Rating>
+      
+        <RateMin>7721</RateMin>
+        <RateMax>15000</RateMax>
+      
+      <Amenities>
+       Room Service , SwimRateMing Pool
+      </Amenities>
+   </Hotel>
+
+

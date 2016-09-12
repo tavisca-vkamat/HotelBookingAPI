@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+   <Hotel>
+      <Id>MUM9</Id>
+      <Name>Sahara Star</Name>
+      <Email>info@SaharaStar.com</Email>
+      <City>Mumbai</City>
+      <Area>Mumbai Airport</Area>
+      <Rating>5</Rating>
+      
+        <RateMin>6666</RateMin>
+        <RateMax>44444</RateMax>
+      
+      <Amenities>
+       Room Service , Internet Acces 
+      </Amenities>
+   </Hotel>
+
+

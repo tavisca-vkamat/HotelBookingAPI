@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Hotel>
+      <Id>PUNE5</Id>
+      <Name>Hotel Coronet</Name>
+      <Email>coronet@gmail.com</Email>
+      <City>Pune</City>
+      <Area>Deccan Gymkhana</Area>
+      <Rating>3.8</Rating>
+      
+        <RateMin>2398</RateMin>
+        <RateMax>3599</RateMax>
+      
+      <Amenities>
+          Room Service, Internet Access
+      </Amenities>
+   </Hotel>
