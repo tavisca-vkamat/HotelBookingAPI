@@ -1,14 +1,12 @@
 ﻿using HotelBooking.customer;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Runtime.Serialization;
 
 namespace HotelBooking.bookingService
 {
+    [DataContract]
     public class BookingDeatils
     {
-
         public string City { get; set; }
         public string RoomId { get; set; }
         public DateTime CheckInDate { get; set; }

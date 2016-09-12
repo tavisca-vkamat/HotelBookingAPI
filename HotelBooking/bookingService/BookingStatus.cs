@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Runtime.Serialization;
 
 namespace HotelBooking.bookingService
 {
+    [DataContract]
     public class BookingStatus
     {
         BookingDeatils bookingDetails;
