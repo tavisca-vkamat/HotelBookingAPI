@@ -11,6 +11,25 @@ namespace HotelBooking
     // NOTE: In order to launch WCF Test Client for testing this service, please select BookingService.svc or BookingService.svc.cs at the Solution Explorer and start debugging.
     public class BookingService : IBookingService
     {
-       
+        public BookingStatus BookRoom(BookingDeatils bookingdetails)
+        {
+            BookingStatus bookingstatus = new BookingStatus();
+
+            bookingstatus.BookingDetails = bookingdetails;
+
+
+            bookingdetails.BookingDate = DateTime.Now;
+            bookingdetails.TotalPrice = CalculatePrice(bookingdetails.City, bookingdetails.RoomId, bookingdetails.numberOfRooms);
+
+            return bookingstatus;
+        }
+
+        private double CalculatePrice(string cityName, string roomId, int numberOfRooms)
+        {
+            double roomRate = new RoomService().GetRate(cityName, roomId) * numberOfRooms;
+
+            return roomRate;
+        }
+
     }
 }

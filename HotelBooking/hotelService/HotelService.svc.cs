@@ -12,9 +12,12 @@ namespace HotelBooking
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class HotelService : IHotel
     {
-        public List<Hotel> GetHotels(HotelFilter hotelFilter)
+        public HotelStatus GetHotels(HotelFilter hotelFilter)
         {
-            List<Hotel> hotels = new List<Hotel>();
+            HotelStatus hotelStatus= new HotelStatus();
+
+            hotelStatus.hotels = new List<Hotel>();
+
             /* Get List of hotels by city name */
             for (int hotelId = 1; ; hotelId++)
             {
@@ -25,21 +28,35 @@ namespace HotelBooking
                 else
                 {
                     hotel.Amenities = hotel.Amenities.Trim();
-                    hotels.Add(hotel);
+                    hotelStatus.hotels.Add(hotel);
                 }
             }
 
             /* filter for minimum rate */
-            hotels = HotelFilterOperations.FilterByRate(hotels, hotelFilter.MinRate);
+            hotelStatus.hotels = HotelFilterOperations.FilterByRate(hotelStatus.hotels, hotelFilter.MinRate);
+            if (hotelStatus.hotels == null)
+            {
+                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                return hotelStatus;
+            }
 
             /* filter for rating */
-            hotels = HotelFilterOperations.FilterByRating(hotels, hotelFilter.Rating);
+            hotelStatus.hotels = HotelFilterOperations.FilterByRating(hotelStatus.hotels, hotelFilter.Rating);
+            if (hotelStatus.hotels == null)
+            {
+                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                return hotelStatus;
+            }
 
             /* filter for amenities */
-            hotels = HotelFilterOperations.FilterByAmenities(hotels, hotelFilter.Amenities);
+            hotelStatus.hotels = HotelFilterOperations.FilterByAmenities(hotelStatus.hotels, hotelFilter.Amenities);
+            if (hotelStatus.hotels == null)
+            {
+                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                return hotelStatus;
+            }
 
-            return hotels;
+            return hotelStatus;
         }
-
     }
 }

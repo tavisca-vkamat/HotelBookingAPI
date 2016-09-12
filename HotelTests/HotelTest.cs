@@ -12,9 +12,9 @@ namespace HotelTests
         public void TestXmlHotelRead()
         {
             string[] amenities = { "Restaurant" };
-            List<Hotel> hotels = new HotelService().GetHotels(new HotelFilter("pune", "4", "3000", amenities));
+            HotelStatus status = new HotelService().GetHotels(new HotelFilter("pune", "4", "3000", amenities));
 
-            Assert.IsNotNull(hotels);
+            Assert.IsNotNull(status);
         }
 
         [TestMethod]
@@ -24,6 +24,20 @@ namespace HotelTests
             List<Room> rooms = new RoomService().GetRooms(new RoomFilter("goa","goa1","2000",amenities));          
 
             Assert.IsNotNull(rooms);
+        }
+
+        [TestMethod]
+        public void TestXmlBookRoom()
+        {
+            BookingDeatils bookingdetails = new BookingDeatils();
+            bookingdetails.RoomId = "PUNE1_1";
+            bookingdetails.City = "pune";
+            bookingdetails.numberOfRooms = 1;
+
+
+            BookingStatus status  = new BookingService().BookRoom(bookingdetails);
+
+            Assert.IsNotNull(status);
         }
     }
 }

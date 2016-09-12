@@ -13,8 +13,16 @@ namespace HotelBooking
     public interface IHotel
     {
         [OperationContract]
-        List<Hotel> GetHotels(HotelFilter hotelFilter);
+        HotelStatus GetHotels(HotelFilter hotelFilter);
     }
+
+    [DataContract]
+    public class HotelStatus
+    {
+        public List<Hotel> hotels { get; set; }
+        public string errorMessage { get; set; }
+    }
+
 
     [DataContract]
     public class HotelFilter

@@ -38,7 +38,7 @@ namespace HotelBooking
             var result = str.Elements("Room").
         Where(x => x.Element("Id").Value.Equals(roomId));
 
-            return double.MinValue;
+            return double.Parse(result.First().Element("Rate").Value);
         }
     }
 }
