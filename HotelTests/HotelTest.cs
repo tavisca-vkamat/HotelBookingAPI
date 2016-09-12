@@ -2,8 +2,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HotelBooking;
 using System.Collections.Generic;
+
 using HotelBooking.hotelService;
 using HotelBooking.bookingService;
+
+
+using HotelBooking.roomService;
 
 namespace HotelTests
 {
@@ -22,10 +26,11 @@ namespace HotelTests
         [TestMethod]
         public void TestXmlRoomsRead()
         {
-            string[] amenities = {"Wifi"};
-            List<Room> rooms = new RoomService().GetRooms(new RoomFilter("goa","goa1","2000",amenities));          
+            string[] amenities = { "Wifi" };
+            RoomStatus roomstatus = new RoomService().GetRooms(new RoomFilter("goa", "goa1", "2000", amenities));
 
-            Assert.IsNotNull(rooms);
+
+            Assert.IsNotNull(roomstatus);
         }
 
         [TestMethod]
@@ -37,7 +42,7 @@ namespace HotelTests
             bookingdetails.numberOfRooms = 1;
 
 
-            BookingStatus status  = new BookingService().BookRoom(bookingdetails);
+            BookingStatus status = new BookingService().BookRoom(bookingdetails);
 
             Assert.IsNotNull(status);
         }

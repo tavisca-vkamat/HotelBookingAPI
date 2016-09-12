@@ -6,6 +6,7 @@ using System.Xml;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml.Linq;
+using HotelBooking.roomService;
 
 namespace HotelBooking
 {

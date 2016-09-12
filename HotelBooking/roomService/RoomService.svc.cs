@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Xml.Linq;
+using HotelBooking.roomService;
 
 namespace HotelBooking
 {
@@ -13,18 +14,33 @@ namespace HotelBooking
     // NOTE: In order to launch WCF Test Client for testing this service, please select RoomService.svc or RoomService.svc.cs at the Solution Explorer and start debugging.
     public class RoomService : IRoom
     {
-        public List<Room> GetRooms(RoomFilter roomfilter)
+        public RoomStatus GetRooms(RoomFilter roomfilter)
 
         {
 
             string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
                                   ".XML";
             List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
+            RoomStatus roomstatus = new RoomStatus();
+            roomstatus.rooms = rooms;
 
             rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
-            rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
+            if (rooms == null)
+            {
+                string msg = "Enter Rates does not have any Match";
 
-            return rooms;
+                roomstatus.messsage = msg;
+                return roomstatus;
+            }
+            rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
+            if (rooms == null)
+            {
+                string msg = "Enter Amenities does not have any Match";
+
+                roomstatus.messsage = msg;
+            }
+
+            return roomstatus;
         }
 
         public double GetRate(string cityName, string roomId)
