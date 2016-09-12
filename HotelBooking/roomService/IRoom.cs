@@ -15,34 +15,24 @@ namespace HotelBooking
         [OperationContract]
         List<Room> GetRooms(RoomFilter roomfilter);
     }
+
     [DataContract]
     public class RoomFilter
     {
         string cityName;
-        string cityroomid;
+        string hotelId;
         string rate;
         string[] amenities;
 
-        public RoomFilter(string cityname, string cityroomid, string rate, string[] amenities)
+        public RoomFilter(string cityname, string hotelId, string rate, string[] amenities)
         {
-            this.cityName = cityname;
-            this.cityroomid = cityroomid;
+            cityName = cityname;
+            HotelId = hotelId;
             this.rate = rate;
             this.amenities = amenities;
 
         }
-        public string Cityroomid
-        {
-            get
-            {
-                return cityroomid;
-            }
-
-            set
-            {
-                cityroomid = value;
-            }
-        }
+    
         public string CityName
         {
             get
@@ -81,6 +71,18 @@ namespace HotelBooking
             }
         }
 
+        public string HotelId
+        {
+            get
+            {
+                return hotelId;
+            }
+
+            set
+            {
+                hotelId = value;
+            }
+        }
     }
 
     [XmlRoot("Room")]

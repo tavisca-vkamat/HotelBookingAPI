@@ -20,14 +20,8 @@ namespace HotelTests
         [TestMethod]
         public void TestXmlRoomsRead()
         {
-
-
             string[] amenities = {"Wifi"};
-            List<Room> rooms = new RoomService().GetRooms(new RoomFilter("goa1","goa","2000",amenities));          
-
-            string[] amenitie = { "Accommodation only" };        
-            List<Room> ro = new RoomService().GetRooms(new RoomFilter("pune","pune1","5000",amenitie));
-           
+            List<Room> rooms = new RoomService().GetRooms(new RoomFilter("goa","goa1","2000",amenities));          
 
             Assert.IsNotNull(rooms);
         }

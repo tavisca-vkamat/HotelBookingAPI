@@ -17,7 +17,7 @@ namespace HotelBooking
 
         {
 
-            string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.Cityroomid +
+            string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
                                   ".XML";
             List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
 

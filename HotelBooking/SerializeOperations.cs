@@ -33,30 +33,29 @@ namespace HotelBooking
         public static List<Room> XMLDeSerializeRooms(string filePath)
         {
 
-           
-            XDocument xmltest = XDocument.Load(@filePath);           
+            XDocument xmltest = XDocument.Load(@filePath);
             List<Room> Roomlist = new List<Room>();
-            
-            var nodes = (from n in xmltest.Descendants("Room")            
-                select new
-                {
-                    Id = (string) n.Element("Id").Value,                
-                    Type = (string) n.Element("Type").Value,
-                    Rate = (string) n.Element("Rate").Value,
-                    Amenities = (string) n.Element("Amenities").Value                 
-                                                                            
-                }).ToList();
+
+            var nodes = (from n in xmltest.Descendants("Room")
+                         select new
+                         {
+                             Id = (string)n.Element("Id").Value,
+                             Type = (string)n.Element("Type").Value,
+                             Rate = (string)n.Element("Rate").Value,
+                             Amenities = (string)n.Element("Amenities").Value
+
+                         }).ToList();
 
             foreach (var n in nodes)
             {
                 Room room = new Room();
-                room.Id=n.Id;
-                room.Type= n.Type;
-                room.Rate= n.Rate;
-                room.Amenities=n.Amenities;
+                room.Id = n.Id;
+                room.Type = n.Type;
+                room.Rate = n.Rate;
+                room.Amenities = n.Amenities;
                 Roomlist.Add(room);
-            }          
-            return Roomlist; 
+            }
+            return Roomlist;
         }
     }
 }
