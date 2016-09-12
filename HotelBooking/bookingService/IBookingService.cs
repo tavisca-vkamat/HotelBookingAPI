@@ -11,7 +11,7 @@ namespace HotelBooking
     [ServiceContract]
     public interface IBookingService
     {
-       // [OperationContract]
-      //  BookRoom();
+       //[OperationContract]
+      
     }
 }

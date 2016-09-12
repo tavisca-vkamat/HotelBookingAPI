@@ -11,8 +11,6 @@ namespace HotelBooking
     // NOTE: In order to launch WCF Test Client for testing this service, please select BookingService.svc or BookingService.svc.cs at the Solution Explorer and start debugging.
     public class BookingService : IBookingService
     {
-        public void DoWork()
-        {
-        }
+       
     }
 }

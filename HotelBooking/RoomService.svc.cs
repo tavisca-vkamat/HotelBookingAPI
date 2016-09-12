@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Xml.Linq;
 
 namespace HotelBooking
 {
@@ -14,27 +16,30 @@ namespace HotelBooking
         public List<Room> GetRooms(RoomFilter roomfilter)
 
         {
-<<<<<<< HEAD
-            List<Room> rooms = new List<Room>();
-           
-                string cityname = roomfilter.CityName;               
-                
-                string city = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.Hotelid.ToLower() + ".XML";            
-                rooms = SerializeOperations.XMLDeSerializeRooms(city);                  
-                rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
-                rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);                
-=======
-           
-                string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.Cityroomid +
-                                      ".XML";
-                 List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
-          
+
+            string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.Cityroomid +
+                                  ".XML";
+            List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
+
             rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
             rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
 
->>>>>>> 77e1400c294cc65b3be519ba2ddbaeebfea3234d
             return rooms;
         }
+
+        public double GetRate(string cityName, string roomId)
+        {
+            string hotelId = roomId.Split('_')[0].ToLower();
+            string roomPath = string.Format("..\\..\\..\\data\\rooms\\{0}\\{1}.XML", cityName, hotelId);
+
+            var xmlStr = File.ReadAllText(roomPath);
+            var str = XElement.Parse(xmlStr);
+
+            var result = str.Elements("Room").
+        Where(x => x.Element("Id").Value.Equals(roomId));
+
+            return double.MinValue;
+        }
     }
-    
 }
+

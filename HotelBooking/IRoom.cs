@@ -18,49 +18,29 @@ namespace HotelBooking
     [DataContract]
     public class RoomFilter
     {
-        string hotelid;
         string cityName;
         string cityroomid;
         string rate;
         string[] amenities;
-       
-<<<<<<< HEAD
-        public RoomFilter(string hotelid,string cityName, string rate, string[] amenities)
-        {
-            this.hotelid = hotelid;
-            this.cityName = cityName;
-=======
-        public RoomFilter(string cityname,string cityroomid,string rate, string[] amenities)
+
+        public RoomFilter(string cityname, string cityroomid, string rate, string[] amenities)
         {
             this.cityName = cityname;
             this.cityroomid = cityroomid;
->>>>>>> 77e1400c294cc65b3be519ba2ddbaeebfea3234d
             this.rate = rate;
             this.amenities = amenities;
-            
+
         }
-<<<<<<< HEAD
-        public string Hotelid
-        {
-            get
-            {
-                return hotelid;
-=======
         public string Cityroomid
         {
             get
             {
                 return cityroomid;
->>>>>>> 77e1400c294cc65b3be519ba2ddbaeebfea3234d
             }
 
             set
             {
-<<<<<<< HEAD
-                hotelid = value;
-=======
                 cityroomid = value;
->>>>>>> 77e1400c294cc65b3be519ba2ddbaeebfea3234d
             }
         }
         public string CityName
@@ -75,10 +55,6 @@ namespace HotelBooking
                 cityName = value;
             }
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 77e1400c294cc65b3be519ba2ddbaeebfea3234d
         public string Rate
         {
             get
