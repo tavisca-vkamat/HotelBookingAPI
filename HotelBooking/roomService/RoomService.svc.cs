@@ -15,29 +15,30 @@ namespace HotelBooking
     public class RoomService : IRoom
     {
         public RoomStatus GetRooms(RoomFilter roomfilter)
-
         {
 
-            string roomFIlePath = "..\\..\\..\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
+            string roomFIlePath = "C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
                                   ".XML";
             List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
             RoomStatus roomstatus = new RoomStatus();
             roomstatus.rooms = rooms;
 
-            rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
-            if (rooms == null)
+            if (roomfilter.Rate != null)
             {
-                string msg = "Enter Rates does not have any Match";
+                rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
+                if(rooms.Count() == 0)
+                    roomstatus.messsage = "Enter Rates does not have any Match";
 
-                roomstatus.messsage = msg;
                 return roomstatus;
             }
-            rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
-            if (rooms == null)
+            
+            if (roomfilter.Amenities != null)
             {
-                string msg = "Enter Amenities does not have any Match";
+                rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
+                if (rooms.Count() == 0)
+                    roomstatus.messsage = "Enter Amenities does not have any Match";
 
-                roomstatus.messsage = msg;
+                return roomstatus;
             }
 
             return roomstatus;

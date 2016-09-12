@@ -26,6 +26,10 @@ namespace HotelBooking.hotelService
             this.amenities = amenities;
         }
 
+        public HotelFilter()
+        {
+        }
+
         public string CityName
         {
             get

@@ -16,7 +16,11 @@ namespace HotelTests
         public void TestXmlHotelRead()
         {
             string[] amenities = { "Restaurant" };
-            HotelStatus status = new HotelService().GetHotels(new HotelFilter("pune", "4", "3000", amenities));
+            HotelFilter hotelFilter = new HotelFilter();
+            hotelFilter.MinRate = "2000";
+            hotelFilter.CityName = "pune";
+            
+            HotelStatus status = new HotelService().GetHotels(hotelFilter);
 
             Assert.IsNotNull(status);
         }
