@@ -7,9 +7,9 @@ namespace HotelBooking.customer
 {
     public class Customer
     {
-        string firstName;
-        string lastName;
-        string emailId;
-        string phoneNumber;
+        //string firstName;
+        //string lastName;
+        //string emailId;
+        //string phoneNumber;
     }
 }
