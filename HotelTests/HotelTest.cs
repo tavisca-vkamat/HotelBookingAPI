@@ -1,9 +1,11 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using HotelBooking;
-using System.Collections.Generic;
 using HotelBooking.hotelService;
 using HotelBooking.bookingService;
+
+
+using HotelBooking.roomService;
+using System;
 
 namespace HotelTests
 {
@@ -22,10 +24,11 @@ namespace HotelTests
         [TestMethod]
         public void TestXmlRoomsRead()
         {
-            string[] amenities = {"Wifi"};
-            List<Room> rooms = new RoomService().GetRooms(new RoomFilter("goa","goa1","2000",amenities));          
+            string[] amenities = { "Wifi" };
+            RoomStatus roomstatus = new RoomService().GetRooms(new RoomFilter("goa", "goa1", "2000", amenities));
 
-            Assert.IsNotNull(rooms);
+
+            Assert.IsNotNull(roomstatus);
         }
 
         [TestMethod]
@@ -35,9 +38,19 @@ namespace HotelTests
             bookingdetails.RoomId = "PUNE1_1";
             bookingdetails.City = "pune";
             bookingdetails.numberOfRooms = 1;
+            bookingdetails.CheckInDate= DateTime.Now;
+            bookingdetails.CheckOutDate = DateTime.Now;
+            bookingdetails.numberOfGuests = 1;
+            bookingdetails.customer = new HotelBooking.customer.Customer();
+            bookingdetails.customer.FirstName = "Vivek";
+            bookingdetails.customer.LastName = "Kamat";
+            bookingdetails.customer.PhoneNumber = "8975025201";
+            bookingdetails.customer.EmailId = "vvkamat@gmail.com";
+            bookingdetails.RoomId = "PUNE1_1";
+            
 
 
-            BookingStatus status  = new BookingService().BookRoom(bookingdetails);
+            BookingStatus status = new BookingService().BookRoom(bookingdetails);
 
             Assert.IsNotNull(status);
         }

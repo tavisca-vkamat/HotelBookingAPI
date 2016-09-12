@@ -12,6 +12,7 @@ namespace HotelBooking
     // NOTE: In order to launch WCF Test Client for testing this service, please select BookingService.svc or BookingService.svc.cs at the Solution Explorer and start debugging.
     public class BookingService : IBookingService
     {
+        Random _r = new Random();
         public BookingStatus BookRoom(BookingDeatils bookingdetails)
         {
             BookingStatus bookingstatus = new BookingStatus();
@@ -20,7 +21,15 @@ namespace HotelBooking
 
             bookingdetails.BookingDate = DateTime.Now;
             bookingdetails.TotalPrice = CalculatePrice(bookingdetails.City, bookingdetails.RoomId, bookingdetails.numberOfRooms);
+            bookingdetails.BookingId = _r.Next().ToString();
 
+            if (bookingstatus.BookingDetails != null)
+            {
+                SerializeOperations.WriteXML(bookingstatus.BookingDetails);
+                bookingstatus.ErrorMessage = "Booking successful";
+            }
+            else
+                bookingstatus.ErrorMessage = "Booking details invalid";
 
             return bookingstatus;
         }

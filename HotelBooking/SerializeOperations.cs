@@ -6,12 +6,23 @@ using System.Xml;
 using System.IO;
 using System.Xml.Serialization;
 using System.Xml.Linq;
+using HotelBooking.roomService;
+using HotelBooking.bookingService;
 
 namespace HotelBooking
 {
     public class SerializeOperations
     {
-        public static string FileLoc { get; private set; }
+        public static void WriteXML(BookingDeatils bookingDetails)
+        {
+            XmlSerializer writer = new XmlSerializer(typeof(BookingDeatils));
+
+            var path = string.Format("D:\\training\\WCF\\HotelBookingAPI\\BookingDetails\\{0}.xml", bookingDetails.BookingId);
+            FileStream file = File.Create(path);
+
+            writer.Serialize(file, bookingDetails);
+            file.Close();
+        }
 
         /* get object from XML file */
         public static object XMLDeSerializeHotel(string filePath, Type objectType)

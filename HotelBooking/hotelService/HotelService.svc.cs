@@ -16,7 +16,7 @@ namespace HotelBooking
             /* Get List of hotels by city name */
             for (int hotelId = 1; ; hotelId++)
             {
-                string city = string.Format("..\\..\\..\\data\\hotels\\{0}\\{1}.XML", hotelFilter.CityName.ToLower(), hotelId);
+                string city = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\hotels\\{0}\\{1}.XML", hotelFilter.CityName.ToLower(), hotelId);
                 Hotel hotel = (Hotel)SerializeOperations.XMLDeSerializeHotel(city, typeof(Hotel));
                 if (hotel == null)
                     break;
@@ -28,27 +28,35 @@ namespace HotelBooking
             }
 
             /* filter for minimum rate */
-            hotelStatus.hotels = HotelFilterOperations.FilterByRate(hotelStatus.hotels, hotelFilter.MinRate);
-            if (hotelStatus.hotels == null)
+            if (hotelFilter.MinRate != null)
             {
-                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
-                return hotelStatus;
+                hotelStatus.hotels = HotelFilterOperations.FilterByRate(hotelStatus.hotels, hotelFilter.MinRate);
+                if (hotelStatus.hotels == null)
+                {
+                    hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                    return hotelStatus;
+                }
             }
-
             /* filter for rating */
-            hotelStatus.hotels = HotelFilterOperations.FilterByRating(hotelStatus.hotels, hotelFilter.Rating);
-            if (hotelStatus.hotels == null)
+            if (hotelFilter.Rating != null)
             {
-                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
-                return hotelStatus;
+                hotelStatus.hotels = HotelFilterOperations.FilterByRating(hotelStatus.hotels, hotelFilter.Rating);
+                if (hotelStatus.hotels == null)
+                {
+                    hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                    return hotelStatus;
+                }
             }
 
             /* filter for amenities */
-            hotelStatus.hotels = HotelFilterOperations.FilterByAmenities(hotelStatus.hotels, hotelFilter.Amenities);
-            if (hotelStatus.hotels == null)
+            if (hotelFilter.Amenities != null)
             {
-                hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
-                return hotelStatus;
+                hotelStatus.hotels = HotelFilterOperations.FilterByAmenities(hotelStatus.hotels, hotelFilter.Amenities);
+                if (hotelStatus.hotels == null)
+                {
+                    hotelStatus.errorMessage = string.Format("Rooms not available for {0}", hotelFilter.MinRate);
+                    return hotelStatus;
+                }
             }
 
             return hotelStatus;

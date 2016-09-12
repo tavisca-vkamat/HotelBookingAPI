@@ -84,10 +84,13 @@
     <Compile Include="hotelService\IHotel.cs" />
     <Compile Include="roomService\IRoom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roomService\Room.cs" />
+    <Compile Include="roomService\RoomFilter.cs" />
     <Compile Include="roomService\RoomFilterOperations.cs" />
     <Compile Include="roomService\RoomService.svc.cs">
       <DependentUpon>RoomService.svc</DependentUpon>
     </Compile>
+    <Compile Include="roomService\RoomStatus.cs" />
     <Compile Include="SerializeOperations.cs" />
   </ItemGroup>
   <ItemGroup>

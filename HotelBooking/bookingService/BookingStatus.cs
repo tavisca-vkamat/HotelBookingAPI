@@ -1,11 +1,14 @@
-﻿using System.Runtime.Serialization;
+using System.Runtime.Serialization;
 
 namespace HotelBooking.bookingService
 {
     [DataContract]
     public class BookingStatus
     {
+        [DataMember]
         BookingDeatils bookingDetails;
+
+        [DataMember]
         string errorMessage;
 
         public BookingDeatils BookingDetails

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
+using HotelBooking.roomService;
 
 namespace HotelBooking
 {
@@ -41,4 +42,4 @@ namespace HotelBooking
             return rooms;
         }
     }
-    }
+}
