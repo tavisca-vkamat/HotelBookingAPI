@@ -17,7 +17,7 @@ namespace HotelBooking
         public RoomStatus GetRooms(RoomFilter roomfilter)
         {
 
-            string roomFIlePath = "C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\rooms\\" + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
+            string roomFIlePath = Properties.roomPath + roomfilter.CityName.ToLower() + "\\" + roomfilter.HotelId +
                                   ".XML";
             List<Room> rooms = SerializeOperations.XMLDeSerializeRooms(roomFIlePath);
             RoomStatus roomstatus = new RoomStatus();
@@ -26,12 +26,12 @@ namespace HotelBooking
             if (roomfilter.Rate != null)
             {
                 rooms = RoomFilterOperations.FilterByRate(rooms, roomfilter.Rate);
-                if(rooms.Count() == 0)
+                if (rooms.Count() == 0)
                     roomstatus.messsage = "Enter Rates does not have any Match";
 
                 return roomstatus;
             }
-            
+
             if (roomfilter.Amenities != null)
             {
                 rooms = RoomFilterOperations.FilterByAmenities(rooms, roomfilter.Amenities);
@@ -47,7 +47,7 @@ namespace HotelBooking
         public double GetRate(string cityName, string roomId)
         {
             string hotelId = roomId.Split('_')[0].ToLower();
-            string roomPath = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\rooms\\{0}\\{1}.XML", cityName, hotelId);
+            string roomPath = string.Format(Properties.roomPath + "{0}\\{1}.XML", cityName, hotelId);
 
             var xmlStr = File.ReadAllText(roomPath);
             var str = XElement.Parse(xmlStr);

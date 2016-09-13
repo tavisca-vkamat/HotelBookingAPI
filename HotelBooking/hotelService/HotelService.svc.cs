@@ -16,7 +16,7 @@ namespace HotelBooking
             /* Get List of hotels by city name */
             for (int hotelId = 1; ; hotelId++)
             {
-                string city = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\hotels\\{0}\\{1}.XML", hotelFilter.CityName.ToLower(), hotelId);
+                string city = string.Format( Properties.hotelPath + "{0}\\{1}.XML", hotelFilter.CityName.ToLower(), hotelId);
                 Hotel hotel = (Hotel)SerializeOperations.XMLDeSerializeHotel(city, typeof(Hotel));
                 if (hotel == null)
                     break;
