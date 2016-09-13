@@ -17,7 +17,7 @@
 		<Id>GOA6_3</Id>
 		<Type>Premium Room</Type>
 		<Rate>50000</Rate>
-		<Amenities>Accommodation with Room Service,AC,TV,Lunch,Wifi</Amenities>
+		<Amenities>Accommodation with Room Service, TV,Lunch, Wifi</Amenities>
 	</Room>
 	
 </Rooms>

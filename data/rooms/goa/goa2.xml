@@ -16,6 +16,6 @@
 		<Id>GOA2_3</Id>
 		<Type>Premium Room</Type>
 		<Rate>4331</Rate>
-		<Amenities>Accommodation with Breakfast,Lunch</Amenities>
+		<Amenities>Accommodation with Breakfast, Lunch</Amenities>
 	</Room>
 </Rooms> 

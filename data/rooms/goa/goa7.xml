@@ -17,7 +17,7 @@
 		<Id>GOA7_3</Id>
 		<Type>Premium Room</Type>
 		<Rate>30000</Rate>
-		<Amenities>Room Service, Restaurant,Wifi</Amenities>
+		<Amenities>Room Service, Restaurant, Wifi</Amenities>
 	</Room>
 	
 </Rooms>

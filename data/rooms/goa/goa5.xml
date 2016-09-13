@@ -17,7 +17,7 @@
 		<Id>GOA5_3</Id>
 		<Type>Premium Room</Type>
 		<Rate>30000</Rate>
-		<Amenities>Accommodation with Room Service,AC,TV</Amenities>
+		<Amenities>Accommodation with Room Service, TV</Amenities>
 	</Room>
 	
 </Rooms>

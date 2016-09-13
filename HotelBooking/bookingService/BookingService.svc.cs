@@ -1,6 +1,7 @@
 ﻿using HotelBooking.bookingService;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -32,6 +33,24 @@ namespace HotelBooking
                 bookingstatus.ErrorMessage = "Booking details invalid";
 
             return bookingstatus;
+        }
+
+        public BookingStatus CancleBooking(BookingDeatils bookingDetails)
+        {
+            string path = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\BookingData\\{0}.XML",
+                bookingDetails.BookingId);
+
+            BookingStatus bookingStatus = new BookingStatus();
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+                bookingStatus.ErrorMessage = "Booking cancled";
+            }
+            else
+            {
+                bookingStatus.ErrorMessage = "Invalid booking id";
+            }
+            return bookingStatus;
         }
 
         private double CalculatePrice(string cityName, string roomId, int numberOfRooms)

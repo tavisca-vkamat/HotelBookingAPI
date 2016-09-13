@@ -47,13 +47,13 @@ namespace HotelBooking
         public double GetRate(string cityName, string roomId)
         {
             string hotelId = roomId.Split('_')[0].ToLower();
-            string roomPath = string.Format("..\\..\\..\\data\\rooms\\{0}\\{1}.XML", cityName, hotelId);
+            string roomPath = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\HotelBookingAPI\\data\\rooms\\{0}\\{1}.XML", cityName, hotelId);
 
             var xmlStr = File.ReadAllText(roomPath);
             var str = XElement.Parse(xmlStr);
 
             var result = str.Elements("Room").
-        Where(x => x.Element("Id").Value.Equals(roomId));
+        Where(x => x.Element("Id").Value.Equals(roomId.ToUpper()));
 
             return double.Parse(result.First().Element("Rate").Value);
         }
