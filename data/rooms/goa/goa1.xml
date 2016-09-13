@@ -17,7 +17,7 @@
 		<Id>GOA1_3</Id>
 		<Type>Premium Room</Type>
 		<Rate>50000</Rate>
-		<Amenities>Room Service,AC,Refrigerator,Gym,Wifi</Amenities>
+		<Amenities>Room Service, Refrigerator, Gym, Wifi</Amenities>
 	</Room>
 	
 </Rooms>   

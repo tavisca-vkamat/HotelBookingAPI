@@ -8,6 +8,9 @@ namespace HotelBooking
     {
         [OperationContract]
         BookingStatus BookRoom(BookingDeatils bookingDetails);
+
+        [OperationContract]
+        BookingStatus CancleBooking(BookingDeatils bookingDetails);
     }
 }
 

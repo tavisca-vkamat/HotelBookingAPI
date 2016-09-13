@@ -10,5 +10,5 @@
         <RateMin>3000</RateMin>
         <RateMax>10000</RateMax>
     
-    <Amenities>Room Service,Restaurant,Wifi</Amenities>
+    <Amenities>Room Service, Restaurant, Wifi</Amenities>
     </Hotel>
