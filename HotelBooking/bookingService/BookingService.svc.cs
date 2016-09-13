@@ -37,7 +37,7 @@ namespace HotelBooking
 
         public BookingStatus CancleBooking(BookingDeatils bookingDetails)
         {
-            string path = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\BookingData\\{0}.XML",
+            string path = string.Format(Properties.bookingPath +"{0}.XML",
                 bookingDetails.BookingId);
 
             BookingStatus bookingStatus = new BookingStatus();

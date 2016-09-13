@@ -17,7 +17,7 @@ namespace HotelBooking
         {
             XmlSerializer writer = new XmlSerializer(typeof(BookingDeatils));
 
-            var path = string.Format("C:\\Users\\nmandge\\Desktop\\vvk\\BookingData\\{0}.xml", bookingDetails.BookingId);
+            var path = string.Format(Properties.bookingPath +"{0}.xml", bookingDetails.BookingId);
             FileStream file = File.Create(path);
 
             writer.Serialize(file, bookingDetails);
